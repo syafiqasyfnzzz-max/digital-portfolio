@@ -531,88 +531,6 @@ header {
   line-height: 1.5;
 }
 
-/* ================= SCENARIO CARD ================= */
-
-.scenario-card {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1.5px solid rgba(230, 120, 170, 0.25);
-  border-radius: 38px;
-  box-shadow: 0 24px 60px rgba(120, 40, 80, 0.12);
-  backdrop-filter: blur(16px);
-  padding: 38px;
-  margin: 35px 0 45px;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-}
-
-.scenario-card::before {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  top: -70px;
-  right: -70px;
-  background: rgba(248, 166, 206, 0.25);
-  border-radius: 50%;
-}
-
-.scenario-header {
-  text-align: center;
-  margin-bottom: 28px;
-  position: relative;
-  z-index: 1;
-}
-
-.scenario-header span {
-  display: inline-block;
-  padding: 10px 22px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #ffe3ef, #ffffff);
-  border: 1.5px solid rgba(230, 120, 170, 0.22);
-  color: #e85aa0;
-  font-weight: 800;
-  margin-bottom: 14px;
-}
-
-.scenario-header h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 34px;
-  color: #3d1829;
-}
-
-.scenario-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  position: relative;
-  z-index: 1;
-}
-
-.scenario-grid div {
-  background: rgba(255, 247, 251, 0.85);
-  border: 1.5px solid rgba(230, 120, 170, 0.18);
-  border-radius: 26px;
-  padding: 25px;
-}
-
-.scenario-grid h4 {
-  color: #3d1829;
-  font-size: 19px;
-  margin-bottom: 15px;
-}
-
-.scenario-grid ul {
-  padding-left: 20px;
-}
-
-.scenario-grid li {
-  color: #6b4155;
-  line-height: 1.8;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
 /* ================= SKILLS SECTION ================= */
 
 .skills-section {
@@ -831,6 +749,8 @@ header {
   z-index: 1;
 }
 
+/* ================= BUTTONS ================= */
+
 .btn {
   display: inline-block;
   padding: 13px 27px;
@@ -877,19 +797,34 @@ header {
   z-index: 2;
 }
 
+/* This hides any old video player box */
+.video-card video,
 video {
-  width: 100%;
-  border-radius: 24px;
-  background: #ddd;
-  transition: 0.35s ease;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 14px 35px rgba(120, 40, 80, 0.10);
+  display: none !important;
 }
 
-video:hover {
-  transform: scale(1.03);
-  box-shadow: 0 24px 50px rgba(120, 40, 80, 0.20);
+.video-placeholder {
+  background: linear-gradient(135deg, #fff7fb, #ffe3ef);
+  border: 1.5px solid rgba(230, 120, 170, 0.25);
+  border-radius: 25px;
+  padding: 32px;
+  margin: 25px 0;
+  text-align: center;
+  box-shadow: 0 14px 35px rgba(120, 40, 80, 0.08);
+  position: relative;
+  z-index: 1;
+}
+
+.video-placeholder h4 {
+  color: #3d1829;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.video-placeholder p {
+  color: #7a5165;
+  margin-bottom: 0;
+  line-height: 1.7;
 }
 
 /* ================= DATA PORTFOLIO ================= */
@@ -956,10 +891,6 @@ footer p {
   }
 
   .quick-info {
-    grid-template-columns: 1fr;
-  }
-
-  .scenario-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1047,14 +978,6 @@ footer p {
     height: 320px;
   }
 
-  .scenario-card {
-    padding: 28px;
-  }
-
-  .scenario-header h3 {
-    font-size: 28px;
-  }
-
   .lms-list {
     padding: 30px;
   }
@@ -1081,38 +1004,7 @@ footer p {
   .skill-card,
   .portfolio-card,
   .video-card,
-  .data-box,
-  .scenario-card {
+  .data-box {
     padding: 25px;
   }
-}
-.video-help {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 14px;
-  color: #8b6073;
-  font-weight: 600;
-}
-.video-placeholder {
-  background: linear-gradient(135deg, #fff7fb, #ffe3ef);
-  border: 1.5px solid rgba(230, 120, 170, 0.25);
-  border-radius: 25px;
-  padding: 28px;
-  margin: 25px 0;
-  text-align: center;
-  box-shadow: 0 14px 35px rgba(120, 40, 80, 0.08);
-  position: relative;
-  z-index: 1;
-}
-
-.video-placeholder h4 {
-  color: #3d1829;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.video-placeholder p {
-  color: #7a5165;
-  margin-bottom: 0;
-  line-height: 1.7;
 }
