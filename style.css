@@ -1093,3 +1093,26 @@ footer p {
   color: #8b6073;
   font-weight: 600;
 }
+.video-placeholder {
+  background: linear-gradient(135deg, #fff7fb, #ffe3ef);
+  border: 1.5px solid rgba(230, 120, 170, 0.25);
+  border-radius: 25px;
+  padding: 28px;
+  margin: 25px 0;
+  text-align: center;
+  box-shadow: 0 14px 35px rgba(120, 40, 80, 0.08);
+  position: relative;
+  z-index: 1;
+}
+
+.video-placeholder h4 {
+  color: #3d1829;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.video-placeholder p {
+  color: #7a5165;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
