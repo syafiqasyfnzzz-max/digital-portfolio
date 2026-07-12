@@ -1008,3 +1008,113 @@ footer p {
     padding: 25px;
   }
 }
+/* ================= SCENARIO 3 VIDEO PLACEHOLDER ================= */
+
+
+.video-placeholder {
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff4fa,
+        #ffe1ee
+    );
+
+    border: 2px solid rgba(232,90,160,0.18);
+
+    border-radius: 28px;
+
+    padding: 35px 25px;
+
+    margin: 25px 0;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 35px rgba(120,40,80,0.08);
+
+}
+
+
+
+.video-placeholder h4 {
+
+    font-family: Georgia, serif;
+
+    color:#3d1829;
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.video-placeholder p {
+
+    color:#7a5165;
+
+    line-height:1.7;
+
+}
+
+
+
+/* ================= HIDE OLD VIDEO PLAYER ================= */
+
+
+video {
+
+    display:none;
+
+}
+
+
+
+/* ================= LMS LIST STYLE ================= */
+
+
+.lms-list {
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.lms-list li {
+
+
+    background:white;
+
+    padding:15px 20px;
+
+    margin-bottom:12px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(232,90,160,0.18);
+
+    color:#6b4155;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+
+}
+
+
+
+.lms-list li:hover {
+
+
+    transform:translateX(8px);
+
+    background:#ffeaf4;
+
+
+}
